@@ -1,0 +1,277 @@
+.mainTips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+  }
+.imageTip1 {
+    width: 100%; /* Make the container take the full width */
+  }
+  
+  .TipImage {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto;
+  }
+  
+  .paragraph1-container{
+    max-width:85%; /* Adjust as needed */
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .paragraph1-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .containerTip-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-containerTip-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageTip-1 {
+    margin-left: 150px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+  
+  .text-sectionTip-1{
+    flex: 1;
+    margin-left: 70px;
+    padding: 0 10px;
+    color: #000000;
+  }
+  
+  .text-sectionTip-1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-sectionTip-1 p {
+    margin-bottom: 10px;
+  }
+  .paragraph2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    max-width:50%; /* Adjust as needed */
+    margin: 20px 0px 40px 100px;
+    /* padding-bottom: 70px; */
+  }
+  .paragraph3-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: left; */
+    /* padding: 20px; */
+    max-width:90%; /* Adjust as needed */
+    margin: 0px 0px 40px 100px;
+  
+  }
+  .containerTip-4 {
+    display: flex; /* Use flexbox to position items side by side */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: auto; /* Adjust height for smaller devices */
+    flex-direction: row; /* Ensure row direction */
+    max-width: 100%;
+    margin: 20px auto; /* Center container and add margin */
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.image-containerTip-4 {
+    flex: 1; /* Allow image container to take available space */
+    display: flex;
+    justify-content: center;
+}
+
+.imageTip4 {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* max-width: 50%; */
+    margin-right: 90px; 
+}
+
+.text-sectionTip-4 {
+    flex: 1;
+    margin-left: 100px;
+    padding: 0 10px;
+    color: #000000;
+}
+
+.text-sectionTip-4 h3 {
+
+       /* text-align: center; */
+    margin-bottom: 20px;
+    /* max-width: 500px; */
+ /* margin-left: 50px; */
+    color: #000000;
+    /* max-width: 5%;   */
+}
+
+.text-sectionTip-4 p {
+    margin-bottom: 0px; /* Add margin below each paragraph */
+    color: #000000; /* Set text color */
+}
+.containerTip-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.image-containerTip-5 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imageTip-5 {
+  width: 90%; /* Ensure image takes full width */
+  margin-left: 130px; /* Adjust left margin for larger screens */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-sectionTip-5 {
+  flex: 1;
+  margin-left: 70px;
+  padding: 0 10px;
+  color: #000000;
+}
+
+.text-sectionTip-5 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-sectionTip-5 p {
+  margin-bottom: 10px;
+}
+  @media (max-width: 768px) {
+
+
+    .text-sectionTip-1 {
+        /* margin: 0 auto 20px; */
+        /* padding: 0 20px;  */
+        max-width: 100%; /* Ensure text section takes full width */
+    }
+
+    .image-containerTip-1 {
+        /* margin: 0 auto;  */
+        max-width: 70%; /* Ensure image container takes full width */
+    }
+
+    .imageTip-1 {
+        width: 100%; /* Ensure image takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+  .containerTip-1 {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+   .text-sectionTip-1 {
+        margin: 0 auto 20px;
+        padding: 0 0px;
+        max-width: 100%;
+      }
+      .text-sectionTip-1 p{
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        max-width: 100%;
+      }
+      .text-sectionTip-1 h3{
+        /* margin: 0 auto 20px; */
+        /* padding: 0 0px; */
+        max-width: 100%;
+      }
+    
+  .image-containerTip-1 {
+        margin: 0 auto 20px;
+        max-width: 100%;;
+      }
+
+      .containerTip-5 {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .text-sectionTip-5 {
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        max-width: 100%;
+      }
+    
+      .image-containerTip-5 {
+        margin: 0 auto 20px;
+        max-width: 90%; /* Adjust as needed for responsiveness */
+      }
+    
+      .imageTip-5 {
+        width: 100%; /* Ensure image takes full width */
+        margin-left: 0; /* Remove left margin for small screens */
+      }
+      .paragraph2-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 10px; /* Adjust the padding for small devices */
+        max-width: 80%; /* Adjust as needed */
+        margin: 20px auto; /* Center the container on small devices */
+        /* padding-bottom: 70px; */
+      }
+      .paragraph3-container {
+        margin: 0 auto 20px; /* Center the container on small devices */
+        padding: 10px; /* Add padding for small devices */
+        max-width: 80%; /* Ensure it takes the full width on small devices */
+      }
+      .containerTip-4{
+        flex-direction: column;
+        text-align: center;
+      }
+
+    
+   .text-sectionTip-4 {
+        margin: 0 auto 20px;
+        padding: 0 0px;
+        max-width: 100%;
+      }
+      .text-sectionTip-4 p{
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        max-width: 100%;
+      }
+      .text-sectionTip-4 h3{
+        /* margin: 0 auto 20px; */
+        /* padding: 0 0px; */
+        max-width: 100%;
+      }
+    
+  .image-containerTip-4 {
+        /* margin: 0 auto 20px; */
+        max-width: 100%;;
+      }
+      .imageTip4 {
+        width: 100%; /* Ensure image takes full width */
+        margin-left: 100px; /* Remove left margin */
+    }
+    
+    
+}

@@ -1,0 +1,176 @@
+.footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 40px 150px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 2;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: none;
+}
+
+.footer-subscription {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0B5ED7;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.subscription-form button:hover {
+    background-color: #666;
+}
+
+hr {
+    border-top: 2px solid #ffffff;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom span {
+    flex: 1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.social-links a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-links a svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 30px; /* Adjust padding for smaller devices */
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex: 1 1 50%; /* Set columns to take half the width */
+        margin-bottom: 15px; /* Adjust margin between columns */
+    }
+
+    .footer-column:nth-child(3) {
+        flex: 1 1 100%; /* Third column takes full width */
+    }
+
+    .footer-subscription {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .subscription-form {
+          max-width: 100%;
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: flex-start;
+    }
+
+    .subscription-form input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        flex: 1;
+        max-width: 100%;
+    }
+    
+    .subscription-form button {
+          max-width: 100%;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0B5ED7;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

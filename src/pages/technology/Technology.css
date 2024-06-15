@@ -1,0 +1,261 @@
+.containerTech-1 {
+    display: flex; /* Use flexbox to position items side by side */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: auto; /* Adjust height for smaller devices */
+    flex-direction: row; /* Ensure row direction */
+    max-width: 100%;
+    margin: 20px auto; /* Center container and add margin */
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.image-containerTech-1 {
+    flex: 1; /* Allow image container to take available space */
+    display: flex;
+    justify-content: center;
+}
+
+.imageTech1 {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* max-width: 50%; */
+    /* margin-left: 40px;  */
+}
+
+.text-sectionTech-1 {
+    flex: 1;
+    margin-left: 70px;
+    padding: 0 10px;
+    color: #000000;
+}
+
+.text-sectionTech-1 h3 {
+
+       text-align: center;
+    margin-bottom: 20px;
+    /* max-width: 500px; */
+ /* margin-left: 50px; */
+    color: #000000;
+    /* max-width: 5%;   */
+}
+
+.text-sectionTech-1 p {
+    margin-bottom: 0px; /* Add margin below each paragraph */
+    color: #000000; /* Set text color */
+}
+.containerTech-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-containerTech-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageTech2 {
+    margin-left: 150px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+  
+  .text-sectionTech-2 {
+    flex: 1;
+    margin-left: 70px;
+    padding: 0 10px;
+    color: #000000;
+  }
+  
+  .text-sectionTech-2 h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-sectionTech-2 p {
+    margin-bottom: 10px;
+  }
+
+  .containerTech-3 {
+    display: flex; /* Use flexbox to position items side by side */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: auto; /* Adjust height for smaller devices */
+    flex-direction: row; /* Ensure row direction */
+    max-width: 100%;
+    margin: 20px auto; /* Center container and add margin */
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.image-containerTech-3 {
+    flex: 1; /* Allow image container to take available space */
+    display: flex;
+    justify-content: center;
+}
+
+.imageTech3 {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* max-width: 50%; */
+    /* margin-left: 100px;  */
+}
+
+.text-sectionTech-3 {
+    flex: 1;
+    margin-left: 70px;
+    padding: 0 10px;
+    color: #000000;
+}
+
+.text-sectionTech-3 h3 {
+
+       text-align: center;
+    margin-bottom: 20px;
+    /* max-width: 500px; */
+ /* margin-left: 50px; */
+    color: #000000;
+    /* max-width: 5%;   */
+}
+
+.text-sectionTech-3 p {
+    margin-bottom: 10px; /* Add margin below each paragraph */
+    color: #000000; /* Set text color */
+}
+
+.containerTech-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-containerTech-4 {
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageTech4{
+    margin-left: 150px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+  
+  .text-sectionTech-4{
+    flex: 1;
+    margin-left: 70px;
+    padding: 0 10px;
+    color: #000000;
+  }
+  
+  .text-sectionTech-4 h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-sectionTech-4 p {
+    margin-bottom: 10px;
+  }
+
+  
+
+@media (max-width: 768px) {
+    .containerTech-1 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .text-sectionTech-1 {
+        margin: 0 auto 20px; /* Center text section and add bottom margin */
+        padding: 0 20px; /* Add padding to the text section */
+        max-width: 100%; /* Ensure text section takes full width */
+    }
+
+    .image-containerTech-1 {
+        margin: 0 auto; 
+        max-width: 100%; /* Ensure image container takes full width */
+    }
+
+    .imageTech1 {
+        width: 100%; /* Ensure image takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+  .containerTech-2 {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+   .text-sectionTech-2 {
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        max-width: 100%;
+      }
+    
+  .image-containerTech-2 {
+        margin: 0 auto 20px;
+        max-width: 90%;
+      }
+    
+       .imageTech2 {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .containerTech-3 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .text-sectionTech-3 {
+        margin: 0 auto 20px; /* Center text section and add bottom margin */
+        padding: 0 20px; /* Add padding to the text section */
+        max-width: 100%; /* Ensure text section takes full width */
+    }
+
+    .image-containerTech-3 {
+        margin: 0 auto; 
+        max-width: 100%; /* Ensure image container takes full width */
+    }
+
+    .imageTech3 {
+        width: 100%; /* Ensure image takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+    .containerTech-4 {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+   .text-sectionTech-4{
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        max-width: 100%;
+      }
+    
+  .image-containerTech-4 {
+        margin: 0 auto 20px;
+        max-width: 90%;
+      }
+    
+       .imageTech4 {
+        width: 100%;
+        margin-left: 0;
+      }
+
+
+    
+}
+

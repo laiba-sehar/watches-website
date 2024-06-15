@@ -1,0 +1,83 @@
+/* CustomerReview.css */
+.review-page {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.review-heading {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.review-grid {
+    display: grid;
+    margin-left: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 250px; 
+}
+
+.review-card {
+    background: #F8F9FA;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .review-card:hover {
+    transform: scale(1.05);
+} */
+
+.review-stars {
+    color: gold;
+    font-size: 1.5em;
+}
+
+.review-text {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.review-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px 0;
+    border: none !important; /* Add this line to remove border */
+}
+
+.review-info {
+    text-align: center;
+}
+
+.review-name {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.review-country {
+    font-size: 1em;
+    color: #666;
+}
+@media (max-width: 480px) {
+    .review-grid {
+        display: grid;
+        margin-left: 150px;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        margin: 30px 50px; 
+    }
+    
+    
+}
