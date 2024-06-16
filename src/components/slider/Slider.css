@@ -1,3 +1,9 @@
-.carousel.slide{
-    background-color: black;
-}
+.carousel-item {
+    cursor: pointer;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  

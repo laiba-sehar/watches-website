@@ -1,0 +1,52 @@
+.image-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .round-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .image-name {
+    font-size: 12px;
+    /* font-weight: bold; */
+  }
+  @media (max-width:480px) {
+    .image-component {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 30px;
+      }
+      
+      .image-container {
+        text-align: center;
+        margin: 0 20px;
+      }
+      
+      .round-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      
+      .image-name {
+        font-size: 12px;
+        /* font-weight: bold; */
+      }
+    
+  }
+  

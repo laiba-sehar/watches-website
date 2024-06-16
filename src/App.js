@@ -16,6 +16,7 @@ import About from './pages/about/About';
 import Technology from './pages/technology/Technology';
 import Contact from './pages/contact/Contact';
 import Tips from './pages/tips/Tips';
+import Catagory from './pages/catagories/Catagory';
 
 function App() {
   return (
@@ -23,13 +24,13 @@ function App() {
     <Router>
     <Navbar/>
     <Routes>
-    <Route path="/" element={<Main/>} />
-    <Route path='/about' element={<About/>}/>
-    <Route path='/technology' element={<Technology/>}/>
-    <Route path='/contact' element={<Contact/>}/>
-    <Route path='/tips' element={<Tips/>}/>
-
-    </Routes>
+          <Route path="/watches/:category" element={<Catagory />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/tips" element={<Tips />} />
+        </Routes>
     <Footer/>
     
     </Router>

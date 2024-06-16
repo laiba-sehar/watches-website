@@ -2,10 +2,16 @@ import React from 'react';
 import Men from '../../assets/menWa.png';
 import Women from '../../assets/womenWa.png';
 import Smart from '../../assets/smartWa.png';
+import { useNavigate } from 'react-router-dom';
 import './Catagory.css'
 
 
 function Catagory() {
+  const navigate = useNavigate();
+
+  const handleClick = (category) => {
+    navigate(`/watches/${category}`);
+  };
     const catagory=[
         {id:1,img:Men,name:"Men's Collection",details:"Make a Bold statement with Aura Men Timeplaces",button:"View Details"},
         {id:1,img:Women,name:"Women’s Collection",details:"$Unleash your Feminine Corn with Women Timespaces",button:"View Details"},
@@ -22,7 +28,7 @@ function Catagory() {
                 <h2 className="catagory-name">{cat.name}</h2>
                 <div className="catagory-details">
                   <span className="catagory-price">{cat.details}</span>
-                  <button className="catagory-button">{cat.button}</button>
+                  <button className="catagory-button" onClick={() => handleClick(cat.name)}>{cat.button}</button>
                 </div>
               </div>
             </div>

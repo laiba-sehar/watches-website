@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Men from '../../assets/menWatch.png';
 import Women from '../../assets/femaleWatch.png';
 import Smart from '../../assets/smart Watch.png';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Carousel } from 'bootstrap'; 
 
@@ -20,6 +21,8 @@ import review1 from '../../assets/review1.png';
 import review2 from '../../assets/review2.png';
 import review3 from '../../assets/review3.png';
 import './Main.css'
+import Slider from '../../components/slider/Slider';
+import Catagory from '../../components/catagory/Catagory';
 
 function Main() {
 
@@ -58,27 +61,7 @@ const reviews=[
     //   }, []);
   return (
     <>
-   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={Men} class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src={Women} class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src={Smart} class="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<Slider/>
     {/* latest collection */}
 
     <div className="product-page">
@@ -122,24 +105,7 @@ const reviews=[
       </div>
     </div>
 {/* Catagories */}
-    <div className="catagory-page">
-        <h1 className="catagory-heading">Discover our Range: Explore our Product Categories</h1>
-        <div className="catagory-grid">
-          {catagory.map(cat => (
-            <div key={cat.id} className="catagory-card">
-              <img src={cat.img} alt={cat.name} className="catagory-image" />
-              <div className="catagory-info">
-                <h2 className="catagory-name">{cat.name}</h2>
-                <div className="catagory-details">
-                  <span className="catagory-price">{cat.details}</span>
-                  <button className="catagory-button">{cat.button}</button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
+   <Catagory/>
       {/* Reviews */}
 
       <div className="review-page">

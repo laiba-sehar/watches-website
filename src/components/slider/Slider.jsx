@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Men from '../../assets/menWatch.png';
 import Women from '../../assets/femaleWatch.png';
 import Smart from '../../assets/smart Watch.png';
@@ -7,49 +8,34 @@ import { Carousel } from 'bootstrap';
 import './Slider.css';
 
 function Slider() {
-  useEffect(() => {
-    const carouselElement = document.querySelector('#carouselExampleIndicators');
+  const navigate = useNavigate();
 
-    if (carouselElement) {
-      const carousel = new Carousel(carouselElement, {
-        interval: 4000, 
-        pause: 'hover',
-        wrap: true
-      });
-      carousel.cycle();
-
-      // Clean up on component unmount
-      return () => carousel.dispose();
-    }
-  }, []);
+  const handleCategoryClick = (category) => {
+    navigate(`/watches/${category}`);};
+    
 
   return (
-    <div id="carouselExampleIndicators" className="carousel slide">
-      <div className="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" onClick={() => handleCategoryClick('men')}>
+        <img src={Men} class="d-block w-100" alt="Men"/>
       </div>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src={Men} className="d-block w-100" alt="Men's Watch"/>
-        </div>
-        <div className="carousel-item">
-          <img src={Women} className="d-block w-100" alt="Women's Watch"/>
-        </div>
-        <div className="carousel-item">
-          <img src={Smart} className="d-block w-100" alt="Smart Watch"/>
-        </div>
+      <div class="carousel-item"onClick={() => handleCategoryClick('women')}>
+        <img src={Women} class="d-block w-100" alt="Women"/>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+      <div class="carousel-item" onClick={() => handleCategoryClick('smart')}>
+        <img src={Smart} class="d-block w-100" alt="Smart"/>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
   );
 }
 
