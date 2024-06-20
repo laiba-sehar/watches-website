@@ -23,7 +23,7 @@ const PopUp = ({ show, handleClose, watch }) => {
             <h2>{watch.name}</h2>
             <p className="price">{watch.price}</p>
             <p className="description">{watch.explanation}</p>
-            <Button className="buy-now-button">Buy Now</Button>
+            <Button variant="dark" className="buy-now-button">Buy Now</Button>
           </div>
         </div>
         <Accordion defaultActiveKey="0" className="mt-4">

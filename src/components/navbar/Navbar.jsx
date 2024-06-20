@@ -1,28 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react';
 import logo from '../../assets/watchLogo.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to="#">
           <img src={logo} alt="Logo" />
         </Link>
-
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
+          onClick={handleNavCollapse}
           aria-controls="navbarNavDropdown"
-          aria-expanded="false"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
@@ -72,7 +74,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                
+                  {/* Other Support Links */}
                 </li>
               </ul>
             </li>
@@ -86,7 +88,6 @@ function Navbar() {
       </div>
     </nav>
   );
-
 }
 
-export default Navbar
+export default Navbar;
