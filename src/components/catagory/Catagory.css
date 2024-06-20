@@ -1,139 +1,139 @@
 .catagory-page {
-    margin-top: 30px;
-    /* padding: 20px; */
-    text-align: center;
-  }
+  margin-top: 30px;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.catagory-heading {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #000000;
+}
+
+.catagory-grid {
+  margin-top: 200px;
+  display: grid;
+  /* max-width: 150%; */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  /* justify-items: center;  */
+  /* margin-left: 380px; */
+  /* text-align: center;
+  align-items: center; */
+  /* max-width: 1200px;  */
+  margin: 80px 350px; 
+  /* height: 55vh;  */
+}
+
+.catagory-card {
+
+  background: #000000;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  /* padding: 20px; */
+  height: 500px; /* Set a fixed height for the card */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Align items vertically */
+
+}
+
+.catagory-card:hover {
+  transform: scale(1.05);
+}
+
+.catagory-image {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 300px; /* Set a fixed height for the image container */
+  object-fit: cover; 
+}
+
+.catagory-info {
+  padding: 10px;
+  width: 100%; /* Ensure the info section takes the full width */
+  /* text-align: left;  */
+}
+
+.catagory-name {
+  justify-content: flex-start;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #F8F9FA;
+}
+
+.catagory-details {
+  display: flex;
+flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.catagory-price {
+  /* font-weight: bold; */
+  font-size: 16px;
+  /* font-size: 1.1em; */
+  color: #F8F9FA;
+}
+
+.catagory-button {
   
-  .catagory-heading {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #000000;
-  }
-  
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #424649;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.catagory-button:hover {
+  background-color: #666;
+}
+@media (max-width: 480px) {
+  .catagory-page {
+      max-width: 100%;
+      margin-top: 70px;
+      /* padding: 20px; */
+      text-align: center;
+    }
+    
+    
   .catagory-grid {
-    margin-top: 200px;
-    display: grid;
-    /* max-width: 150%; */
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 20px;
-    /* justify-items: center;  */
-    /* margin-left: 380px; */
-    /* text-align: center;
-    align-items: center; */
-    /* max-width: 1200px;  */
-    margin: 80px 350px; 
-    /* height: 55vh;  */
-  }
-  
-  .catagory-card {
 
-    background: #000000;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    flex-direction: column; /* Align items in a column */
-    align-items: center; /* Center items horizontally */
-    /* padding: 20px; */
-    height: 500px; /* Set a fixed height for the card */
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Align items vertically */
+      margin-top: 200px;
+      display: grid;
+      /* max-width: 150%; */
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      justify-items: center; /* Center items within the grid */
+      /* margin-left: 180px; */
+      /* text-align: center;
+      align-items: center; */
+      /* max-width: 1200px;  */
+      margin: 80px ; 
+      /* height: 55vh;  */
+    }
+    
+    .catagory-card {
+  
+      background: #000000;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      flex-direction: column; /* Align items in a column */
+      align-items: center; /* Center items horizontally */
+      /* padding: 20px; */
+    }
+    
  
-  }
-  
-  .catagory-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .catagory-image {
-    border-radius: 10px;
-    max-width: 100%;
-    height: 300px; /* Set a fixed height for the image container */
-    object-fit: cover; 
-  }
-  
-  .catagory-info {
-    padding: 10px;
-    width: 100%; /* Ensure the info section takes the full width */
-    /* text-align: left;  */
-  }
-  
-  .catagory-name {
-    justify-content: flex-start;
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #F8F9FA;
-  }
-  
-  .catagory-details {
-    display: flex;
-  flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-  }
-  
-  .catagory-price {
-    /* font-weight: bold; */
-    font-size: 16px;
-    /* font-size: 1.1em; */
-    color: #F8F9FA;
-  }
-  
-  .catagory-button {
-    
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    font-size: 0.9em;
-    color: #fff;
-    background-color: #424649;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .catagory-button:hover {
-    background-color: #666;
-  }
-  @media (max-width: 480px) {
-    .catagory-page {
-        max-width: 100%;
-        margin-top: 70px;
-        /* padding: 20px; */
-        text-align: center;
-      }
-      
-      
-    .catagory-grid {
-
-        margin-top: 200px;
-        display: grid;
-        /* max-width: 150%; */
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 20px;
-        justify-items: center; /* Center items within the grid */
-        /* margin-left: 180px; */
-        /* text-align: center;
-        align-items: center; */
-        /* max-width: 1200px;  */
-        margin: 80px ; 
-        /* height: 55vh;  */
-      }
-      
-      .catagory-card {
-    
-        background: #000000;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s;
-        flex-direction: column; /* Align items in a column */
-        align-items: center; /* Center items horizontally */
-        /* padding: 20px; */
-      }
-      
-   
-       }
+     }
