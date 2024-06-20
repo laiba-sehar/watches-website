@@ -78,7 +78,7 @@ import smart08 from '../../assets/Smart08.webp'
 
 
 import RoundImage from '../../components/roundImage/RoundImage';
-const GenericWatchPage = () => {
+const Catagory = () => {
     const { category } = useParams();
     const [selectedCategory, setSelectedCategory] = useState(category);
     const [showModal, setShowModal] = useState(false);
@@ -175,4 +175,4 @@ const GenericWatchPage = () => {
   );
 };
 
-export default GenericWatchPage;
+export default Catagory;
