@@ -1,6 +1,5 @@
 .catagory-page {
   margin-top: 30px;
-  /* padding: 20px; */
   text-align: center;
 }
 
@@ -13,14 +12,9 @@
 .catagory-grid {
   margin-top: 200px;
   display: grid;
-  /* max-width: 150%; */
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
-  /* justify-items: center;  */
-  /* margin-left: 380px; */
-  /* text-align: center;
-  align-items: center; */
-  /* max-width: 1200px;  */
+  max-width: 1200px; 
   margin: 80px 350px; 
   /* height: 55vh;  */
 }
@@ -99,41 +93,30 @@ flex-direction: column;
 }
 @media (max-width: 480px) {
   .catagory-page {
-      max-width: 100%;
-      margin-top: 70px;
-      /* padding: 20px; */
-      text-align: center;
-    }
-    
-    
-  .catagory-grid {
+    margin-top: 70px;
+    text-align: center;
+  }
 
-      margin-top: 200px;
-      display: grid;
-      /* max-width: 150%; */
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-      justify-items: center; /* Center items within the grid */
-      /* margin-left: 180px; */
-      /* text-align: center;
-      align-items: center; */
-      /* max-width: 1200px;  */
-      margin: 80px ; 
-      /* height: 55vh;  */
-    }
-    
-    .catagory-card {
-  
-      background: #000000;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-      flex-direction: column; /* Align items in a column */
-      align-items: center; /* Center items horizontally */
-      /* padding: 20px; */
-    }
-    
- 
-     }
+  .catagory-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center items within the grid */
+    width: 100%; /* Ensure the grid container takes the full width */
+    margin: 0 auto; /* Center the grid container */
+    padding: 0 10px; 
+  }
+
+  .catagory-card {
+    background: #000000;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
